@@ -1,0 +1,7 @@
+.artifacts/
+*.exe
+*.apk
+*.pfx
+*.p12
+*.key
+__pycache__/
