@@ -4,8 +4,8 @@
   "release": "https://github.com/aldomm/XPPanelsVR-Quest/releases/tag/v0.2.0-preview.1",
   "windows": {
     "file": "XPPanels-Companion-0.2.0-preview.1-windows-x64-SELF-SIGNED.exe",
-    "bytes": 15585072,
-    "sha256": "b21470548903097c2bf9ff70fd99be42f80d2b59c066556ac3805fa88e58a203",
+    "bytes": 15586240,
+    "sha256": "4a3854f4b444f3df3e65ac3b40e0c4e953f193edb87844bc68c3a6fa664a4120",
     "signing": "Self-signed; not automatically trusted by Windows",
     "certificateSubject": "CN=AldoApps XPPanels Preview",
     "certificateSha1Thumbprint": "CE931B5D11F60F1C4CD10247FF077EB6575983DE",
@@ -42,7 +42,7 @@
     "AldoApps-Preview-Signing.cer": "def50075e5c4bc9b44b986abc4e23b432da86b6adefb7c0cb4fed03f0f990468",
     "Cockpit-Attribution.txt": "41534c5506e6202ed5f65425673d5e31781d3fa23b963161e8f2fd8d51f4041f",
     "Preview-Terms.txt": "f9cf375758e6cca7a1e8eb4e1f72da596780e02e17b3f45c54c9d2d6d5191d89",
-    "XPPanels-Companion-0.2.0-preview.1-windows-x64-SELF-SIGNED.exe": "b21470548903097c2bf9ff70fd99be42f80d2b59c066556ac3805fa88e58a203",
+    "XPPanels-Companion-0.2.0-preview.1-windows-x64-SELF-SIGNED.exe": "4a3854f4b444f3df3e65ac3b40e0c4e953f193edb87844bc68c3a6fa664a4120",
     "XPPanelsVR-Quest-2026.10.14-preview.apk": "909fcb79d275d1d95f582e6957e784c58f66ca66226a2e30894ee0bda768a357"
   }
 }
