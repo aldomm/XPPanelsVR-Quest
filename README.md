@@ -6,10 +6,10 @@ This repository contains only the static website, public release metadata and
 notices. Application source repositories remain private. No signing private key,
 credentials, aircraft files or simulator SDK belong here.
 
-The Windows preview is self-signed and **not automatically trusted by Windows**.
-The Apple-silicon Mac preview is Developer ID signed, Apple-notarized and stapled.
-The matched Quest APK is the accepted development-signed/debuggable preview.
-All are testing previews, not hardened production or Store releases.
+The Windows beta is self-signed and **not automatically trusted by Windows**.
+The Apple-silicon Mac beta is Developer ID signed, Apple-notarized and stapled.
+The matched Quest APK is the accepted development-signed/debuggable beta build.
+All are public beta testing builds, not hardened production or Store releases.
 
 GitHub Pages serves `main` at the repository root. Large downloads are release
 assets, not committed binaries. See the website for setup and current limitations.

@@ -1,9 +1,9 @@
 {
-  "version": "0.2.0-preview.1",
+  "version": "0.2.0-beta.1",
   "date": "2026-10-14",
-  "release": "https://github.com/aldomm/XPPanelsVR-Quest/releases/tag/v0.2.0-preview.1",
+  "release": "https://github.com/aldomm/XPPanelsVR-Quest/releases/tag/v0.2.0-beta.1",
   "windows": {
-    "file": "XPPanels-Companion-0.2.0-preview.1-windows-x64-SELF-SIGNED.exe",
+    "file": "XPPanels-Companion-0.2.0-beta.1-windows-x64-SELF-SIGNED.exe",
     "bytes": 15586240,
     "sha256": "4a3854f4b444f3df3e65ac3b40e0c4e953f193edb87844bc68c3a6fa664a4120",
     "signing": "Self-signed; not automatically trusted by Windows",
@@ -16,7 +16,7 @@
     "signatureTest": "Installer, uninstaller and two own native executables have expected signer/timestamp. Untrusted root expected. Modified executable reports HashMismatch."
   },
   "quest": {
-    "file": "XPPanelsVR-Quest-2026.10.14-preview.apk",
+    "file": "XPPanelsVR-Quest-2026.10.14-beta.1.apk",
     "bytes": 88769106,
     "sha256": "909fcb79d275d1d95f582e6957e784c58f66ca66226a2e30894ee0bda768a357",
     "package": "com.aldoapps.xppanelsquest",
@@ -31,7 +31,7 @@
     "debuggable": true
   },
   "limits": [
-    "Testing preview only",
+    "Public Beta 1 testing software",
     "Physical joystick required for virtual sidesticks",
     "Neutral virtual-controller driver not bundled",
     "Mac package is Apple silicon only; Windows 11 x64 remains the tested Windows host",
@@ -43,12 +43,12 @@
     "AldoApps-Preview-Signing.cer": "def50075e5c4bc9b44b986abc4e23b432da86b6adefb7c0cb4fed03f0f990468",
     "Cockpit-Attribution.txt": "41534c5506e6202ed5f65425673d5e31781d3fa23b963161e8f2fd8d51f4041f",
     "Preview-Terms.txt": "f9cf375758e6cca7a1e8eb4e1f72da596780e02e17b3f45c54c9d2d6d5191d89",
-    "XPPanels-Companion-0.2.0-preview.1-windows-x64-SELF-SIGNED.exe": "4a3854f4b444f3df3e65ac3b40e0c4e953f193edb87844bc68c3a6fa664a4120",
-    "XPPanelsVR-Quest-2026.10.14-preview.apk": "909fcb79d275d1d95f582e6957e784c58f66ca66226a2e30894ee0bda768a357",
-    "XPPanels-Companion-0.2.0-preview.1-macos-arm64.pkg": "13bca320ea205987c8a7cc3373f8d5e2f8def5d8b054d5b890c5709fca14ec2a"
+    "XPPanels-Companion-0.2.0-beta.1-windows-x64-SELF-SIGNED.exe": "4a3854f4b444f3df3e65ac3b40e0c4e953f193edb87844bc68c3a6fa664a4120",
+    "XPPanels-Companion-0.2.0-beta.1-macos-arm64.pkg": "13bca320ea205987c8a7cc3373f8d5e2f8def5d8b054d5b890c5709fca14ec2a",
+    "XPPanelsVR-Quest-2026.10.14-beta.1.apk": "909fcb79d275d1d95f582e6957e784c58f66ca66226a2e30894ee0bda768a357"
   },
   "mac": {
-    "file": "XPPanels-Companion-0.2.0-preview.1-macos-arm64.pkg",
+    "file": "XPPanels-Companion-0.2.0-beta.1-macos-arm64.pkg",
     "bytes": 18703557,
     "sha256": "13bca320ea205987c8a7cc3373f8d5e2f8def5d8b054d5b890c5709fca14ec2a",
     "minimumOS": "macOS 15.0",
@@ -64,6 +64,9 @@
     "adbSha256": "4de5fe2d1e8e8f9e085324398c10e17cdc08172d0a97b82e73078d8a2a7e12dd",
     "pluginSha256": "520e3199df1bfd413daaec7ecda1976e2665f8f118dd09ad405e3751a35cae81",
     "packageTest": "Developer ID signatures, strict nested-code validation, Apple notarization/stapling, Gatekeeper install assessment and packaged helper self-test passed",
-    "scope": "Apple-silicon testing preview built from the accepted Mac/Quest Companion installation; clean-Mac and Intel qualification are not claimed"
-  }
+    "scope": "Apple-silicon public beta built from the accepted Mac/Quest Companion installation; clean-Mac and Intel qualification are not claimed"
+  },
+  "channel": "public beta",
+  "promotedFrom": "v0.2.0-preview.1",
+  "binaryChangesFromPromotedBuild": false
 }

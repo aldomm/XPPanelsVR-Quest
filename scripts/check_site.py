@@ -26,6 +26,9 @@ for name,page in pages.items():
         assert (ROOT/target).is_file(),(name,href)
         if url.fragment:assert url.fragment in pages[target].ids,(name,href)
 release=json.loads((ROOT/'release.json').read_text())
+assert release['version']=='0.2.0-beta.1'
+assert release['channel']=='public beta'
+assert release['binaryChangesFromPromotedBuild'] is False
 assert release['windows']['signing']=='Self-signed; not automatically trusted by Windows'
 assert release['mac']['architecture']=='arm64'
 assert release['mac']['sha256']=='13bca320ea205987c8a7cc3373f8d5e2f8def5d8b054d5b890c5709fca14ec2a'
