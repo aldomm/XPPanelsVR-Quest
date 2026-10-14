@@ -22,7 +22,7 @@
     "automatedTest": "Complete",
     "automatedTestNote": "Basic malware test passed; Meta reports that android:allowBackup is not explicitly false",
     "applicationIcon": "Adaptive, round and legacy icons derived from the XPPanelsVR Apple Vision Pro artwork",
-    "cleanQuest3Install": "Code 20001 passed through com.oculus.ocms; managed update and Library-icon verification for code 20002 remain"
+    "cleanQuest3Install": "Meta-managed code 20002 update verified; Windows sampled both-side controls, ISCS and audio accepted on Quest 3. Library icon visual confirmation remains separate."
   },
   "windows": {
     "file": "XPPanels-Companion-0.2.1-beta.1-windows-x64-SELF-SIGNED.exe",
@@ -51,7 +51,8 @@
     "pluginSha256": "3f93a331f18ee2d2e8da36a5e3d2a10675a63574176fba252c6e8a5582e13ff0",
     "captureSha256": "ecb5fecc95d4b87ba37d3f47b8ffcc8c088fdc6d10148cbb1eec0f5f84f58c31",
     "capturePESectionsMatchPreviousRelease": true,
-    "preservedBaselineFiles": 1980
+    "preservedBaselineFiles": 1980,
+    "liveAcceptance": "2026-10-15: installed via Companion plugin UI with verified previous-plugin backup; X-Plane loaded/enabled command plugin; user accepted both-side sampled controls, ISCS and audio on Meta Quest beta code 20002; all nine streams passed fresh capture/decode checks. Broad clean-PC and sustained-flight qualification not claimed."
   },
   "quest": {
     "file": "XPPanelsVR-Quest-2026.10.14-beta.1.apk",
@@ -114,5 +115,6 @@
   "channel": "public beta",
   "binaryChangesFromPromotedBuild": true,
   "baselineRelease": "https://github.com/aldomm/XPPanelsVR-Quest/releases/tag/v0.2.0-beta.1",
-  "releaseScope": "Windows command-plugin setup only; Mac and Quest builds unchanged"
+  "releaseScope": "Windows command-plugin setup only; Mac and Quest builds unchanged",
+  "documentationUpdated": "2026-10-15"
 }

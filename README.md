@@ -26,3 +26,10 @@ Mac Companion remains 0.2.0-beta.1. Higher-quality Windows video was withdrawn.
 The website header, favicon and Quest download card use the original Apple Vision Pro
 XPPanelsVR app artwork from Publishing/CompanionWebsite/assets/app-icon.png in the
 private VR repository (SHA256 9d41bece1dff8150ad3cbc3f425e6fb6d8d9fc6d643a572b6edccc2e4a66af41).
+
+Setup instructions refreshed 15 October 2026 after reading the Mac package handover
+and verifying the published PKG digest. The guide covers both OS installers, bundled
+plugin setup, optional Mac virtual monitor, Meta approval, USB authorization, nine
+display sources, optional media, first-session checks, recovery and rollback.
+Windows live acceptance now includes sampled both-side controls, ISCS and audio
+on Meta beta code 20002; this does not establish every PC/aircraft combination.
