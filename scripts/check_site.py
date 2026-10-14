@@ -33,6 +33,10 @@ assert release['windows']['signing']=='Self-signed; not automatically trusted by
 assert release['mac']['architecture']=='arm64'
 assert release['mac']['sha256']=='13bca320ea205987c8a7cc3373f8d5e2f8def5d8b054d5b890c5709fca14ec2a'
 assert release['mac']['notarization']=='Accepted and stapled'
+assert release['metaBeta']['invite']=='https://www.meta.com/s/4YJ4Mw9Hd'
+assert release['metaBeta']['debuggable'] is False
+assert release['metaBeta']['sha256']=='176e16bdc32cd56f56a5b9c758602f6170e4af8dd47396070fb0922f6a72a8af'
+assert release['metaBeta']['automatedTest']=='Complete'
 assert release['quest']['debuggable'] is True
 assert release['quest']['sha256']=='909fcb79d275d1d95f582e6957e784c58f66ca66226a2e30894ee0bda768a357'
 assert 'STcmVYqeqQ8' in (ROOT/'site.js').read_text()

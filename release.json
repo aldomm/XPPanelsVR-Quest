@@ -2,6 +2,23 @@
   "version": "0.2.0-beta.1",
   "date": "2026-10-14",
   "release": "https://github.com/aldomm/XPPanelsVR-Quest/releases/tag/v0.2.0-beta.1",
+  "metaBeta": {
+    "invite": "https://www.meta.com/s/4YJ4Mw9Hd",
+    "access": "Private; manual approval; testers must be at least 18",
+    "appId": "1486007267918360",
+    "channelId": "2573676676428443",
+    "buildId": "1486064327912654",
+    "version": "0.2.0-beta.1",
+    "versionCode": 20001,
+    "bytes": 58373830,
+    "sha256": "176e16bdc32cd56f56a5b9c758602f6170e4af8dd47396070fb0922f6a72a8af",
+    "certificateSha256": "af19a5781c59d01a8c06126f13846c8611ace9bd3d0e63861500399921eb3099",
+    "signing": "AldoApps production certificate; APK Signature Scheme v2",
+    "debuggable": false,
+    "supportedDevices": ["quest3", "quest3s"],
+    "automatedTest": "Complete",
+    "cleanQuest3Install": "Passed; installed by com.oculus.ocms; pulled APK exactly matched uploaded SHA-256"
+  },
   "windows": {
     "file": "XPPanels-Companion-0.2.0-beta.1-windows-x64-SELF-SIGNED.exe",
     "bytes": 15586240,
@@ -36,7 +53,7 @@
     "Neutral virtual-controller driver not bundled",
     "Mac package is Apple silicon only; Windows 11 x64 remains the tested Windows host",
     "Windows requires the separate working XPPanelsBridge command plugin; Mac includes guided plugin installation",
-    "Quest APK is development-signed/debuggable; broad clean-machine and aircraft-version qualification remain pending"
+    "Primary Quest Beta is production-signed and Meta-managed; Quest 3S and broad aircraft-version qualification remain pending"
   ],
   "demo": "https://youtu.be/STcmVYqeqQ8",
   "hashes": {

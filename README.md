@@ -8,8 +8,10 @@ credentials, aircraft files or simulator SDK belong here.
 
 The Windows beta is self-signed and **not automatically trusted by Windows**.
 The Apple-silicon Mac beta is Developer ID signed, Apple-notarized and stapled.
-The matched Quest APK is the accepted development-signed/debuggable beta build.
-All are public beta testing builds, not hardened production or Store releases.
+The primary Quest distribution is a production-signed, non-debuggable private Meta
+Beta for Quest 3/3S. The accepted development-signed APK remains available only as a
+technical fallback. All are beta testing builds; the Quest app has not been submitted
+for public Meta Horizon Store review.
 
 GitHub Pages serves `main` at the repository root. Large downloads are release
 assets, not committed binaries. See the website for setup and current limitations.
