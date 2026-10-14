@@ -18,3 +18,7 @@ assets, not committed binaries. See the website for setup and current limitation
 
 The supplied demonstration is https://youtu.be/STcmVYqeqQ8 and loads only after
 an explicit click on the website. The hero image is a cropped still at approximately 6:16 from the project owner’s demo: https://youtu.be/STcmVYqeqQ8. It is stored locally so viewing the page does not contact YouTube.
+
+Windows 0.2.1-beta.1 adds only explicit plugin setup. Economy media and cockpit
+protocols are unchanged and compatible with Meta Quest beta 0.2.0-beta.1/code20001.
+Mac Companion remains 0.2.0-beta.1. Higher-quality Windows video was withdrawn.

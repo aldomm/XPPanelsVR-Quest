@@ -7,13 +7,15 @@ from urllib.parse import urlsplit,unquote
 ROOT=Path(__file__).resolve().parents[1]
 class Page(HTMLParser):
     def __init__(self,text):
-        super().__init__();self.ids=set();self.links=[];self.headings=[];self.feed(text)
+        super().__init__();self.ids=set();self.links=[];self.linksById={};self.headings=[];self.feed(text)
     def handle_starttag(self,tag,attrs):
         attrs=dict(attrs)
         if 'id' in attrs:
             assert attrs['id'] not in self.ids,'Duplicate anchor'
             self.ids.add(attrs['id'])
-        if tag=='a':self.links.append(attrs.get('href',''))
+        if tag=='a':
+            self.links.append(attrs.get('href',''))
+            if 'id' in attrs:self.linksById[attrs['id']]=attrs.get('href','')
         if tag in ('h1','h2','h3'):self.headings.append(tag)
         assert tag not in ('script','iframe') or not attrs.get('src','').startswith('http'),'No third-party resource at page load'
 pages={p.name:Page(p.read_text(encoding='utf-8')) for p in ROOT.glob('*.html')}
@@ -26,9 +28,16 @@ for name,page in pages.items():
         assert (ROOT/target).is_file(),(name,href)
         if url.fragment:assert url.fragment in pages[target].ids,(name,href)
 release=json.loads((ROOT/'release.json').read_text())
-assert release['version']=='0.2.0-beta.1'
+assert release['version']=='0.2.1-beta.1'
 assert release['channel']=='public beta'
-assert release['binaryChangesFromPromotedBuild'] is False
+assert release['binaryChangesFromPromotedBuild'] is True
+assert release['windows']['pluginBundled'] is True
+assert release['windows']['highQualityVideoAdded'] is False
+assert release['windows']['requiresQuestRebuild'] is False
+assert release['windows']['capturePESectionsMatchPreviousRelease'] is True
+assert release['windows']['compatibleQuest']=={key:release['metaBeta'][key] for key in ('version','versionCode','sha256')}
+assert pages['index.html'].linksById['windows-download']==release['windows']['downloadUrl']
+assert pages['index.html'].linksById['mac-download']==release['mac']['downloadUrl']
 assert release['windows']['signing']=='Self-signed; not automatically trusted by Windows'
 assert release['mac']['architecture']=='arm64'
 assert release['mac']['sha256']=='13bca320ea205987c8a7cc3373f8d5e2f8def5d8b054d5b890c5709fca14ec2a'

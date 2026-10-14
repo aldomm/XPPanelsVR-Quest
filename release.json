@@ -1,7 +1,7 @@
 {
-  "version": "0.2.0-beta.1",
+  "version": "0.2.1-beta.1",
   "date": "2026-10-14",
-  "release": "https://github.com/aldomm/XPPanelsVR-Quest/releases/tag/v0.2.0-beta.1",
+  "release": "https://github.com/aldomm/XPPanelsVR-Quest/releases/tag/v0.2.1-beta.1",
   "metaBeta": {
     "invite": "https://www.meta.com/s/4YJ4Mw9Hd",
     "access": "Private; manual approval; testers must be at least 18",
@@ -15,22 +15,41 @@
     "certificateSha256": "af19a5781c59d01a8c06126f13846c8611ace9bd3d0e63861500399921eb3099",
     "signing": "AldoApps production certificate; APK Signature Scheme v2",
     "debuggable": false,
-    "supportedDevices": ["quest3", "quest3s"],
+    "supportedDevices": [
+      "quest3",
+      "quest3s"
+    ],
     "automatedTest": "Complete",
     "cleanQuest3Install": "Passed; installed by com.oculus.ocms; pulled APK exactly matched uploaded SHA-256"
   },
   "windows": {
-    "file": "XPPanels-Companion-0.2.0-beta.1-windows-x64-SELF-SIGNED.exe",
-    "bytes": 15586240,
-    "sha256": "4a3854f4b444f3df3e65ac3b40e0c4e953f193edb87844bc68c3a6fa664a4120",
+    "file": "XPPanels-Companion-0.2.1-beta.1-windows-x64-SELF-SIGNED.exe",
+    "bytes": 15616952,
+    "sha256": "4c053c3f651e68214505f661fc3dc440f98b632c16671b93a6c1c12148c33f4f",
     "signing": "Self-signed; not automatically trusted by Windows",
     "certificateSubject": "CN=AldoApps XPPanels Preview",
     "certificateSha1Thumbprint": "CE931B5D11F60F1C4CD10247FF077EB6575983DE",
     "certificateSha256": "def50075e5c4bc9b44b986abc4e23b432da86b6adefb7c0cb4fed03f0f990468",
     "timestamp": "RFC3161 SHA-256 / DigiCert",
-    "baseline": "axes-efb-r1",
-    "installerTest": "Install, 1989 payload hashes, shortcuts, registration, packaged self-test, UI smoke, refusal to overwrite, uninstall, preserved settings and unknown file: passed",
-    "signatureTest": "Installer, uninstaller and two own native executables have expected signer/timestamp. Untrusted root expected. Modified executable reports HashMismatch."
+    "baseline": "accepted 0.2.0-beta.1 Economy capture and runtime",
+    "installerTest": "53 Python tests; isolated install/uninstall; all1994 payload/manifest files; shortcuts/registration, self-test/UI smoke, overwrite/lock refusal, settings/unknown-file preservation; signed real plugin in synthetic folder: passed",
+    "signatureTest": "Installer, uninstaller, capture, launcher and plugin use the existing self-signed identity and RFC3161 timestamps. Windows trust is not automatic.",
+    "version": "0.2.1-beta.1",
+    "downloadUrl": "https://github.com/aldomm/XPPanelsVR-Quest/releases/download/v0.2.1-beta.1/XPPanels-Companion-0.2.1-beta.1-windows-x64-SELF-SIGNED.exe",
+    "sourceCommit": "65c33406b6de202510e446cce78817dfccd1a719",
+    "pluginBundled": true,
+    "highQualityVideoAdded": false,
+    "requiresQuestRebuild": false,
+    "video": "Unchanged H.264 Economy / XPV1",
+    "compatibleQuest": {
+      "version": "0.2.0-beta.1",
+      "versionCode": 20001,
+      "sha256": "176e16bdc32cd56f56a5b9c758602f6170e4af8dd47396070fb0922f6a72a8af"
+    },
+    "pluginSha256": "3f93a331f18ee2d2e8da36a5e3d2a10675a63574176fba252c6e8a5582e13ff0",
+    "captureSha256": "ecb5fecc95d4b87ba37d3f47b8ffcc8c088fdc6d10148cbb1eec0f5f84f58c31",
+    "capturePESectionsMatchPreviousRelease": true,
+    "preservedBaselineFiles": 1980
   },
   "quest": {
     "file": "XPPanelsVR-Quest-2026.10.14-beta.1.apk",
@@ -45,24 +64,29 @@
     "targetSdk": 35,
     "signing": "Android development certificate; APK Signature Scheme v2 verified using official apksigner",
     "certificateSha256": "54cad1168ce65132e48f246b13a6467da30f9ce83230efce97e5d27ac40774a2",
-    "debuggable": true
+    "debuggable": true,
+    "version": "0.2.0-beta.1",
+    "downloadUrl": "https://github.com/aldomm/XPPanelsVR-Quest/releases/download/v0.2.0-beta.1/XPPanelsVR-Quest-2026.10.14-beta.1.apk"
   },
   "limits": [
     "Public Beta 1 testing software",
     "Physical joystick required for virtual sidesticks",
     "Neutral virtual-controller driver not bundled",
     "Mac package is Apple silicon only; Windows 11 x64 remains the tested Windows host",
-    "Windows requires the separate working XPPanelsBridge command plugin; Mac includes guided plugin installation",
-    "Primary Quest Beta is production-signed and Meta-managed; Quest 3S and broad aircraft-version qualification remain pending"
+    "Both Companions include explicit guided XPPanelsBridge setup; actual plugin loading is a manual simulator check",
+    "Primary Quest Beta is production-signed and Meta-managed; Quest 3S and broad aircraft-version qualification remain pending",
+    "Windows0.2.1-beta.1 adds plugin setup only; Economy streaming unchanged; no virtual-monitor or high-quality video addition",
+    "The current production Meta build still requires physical end-to-end acceptance; no Quest rebuild is needed for this Windows update"
   ],
   "demo": "https://youtu.be/STcmVYqeqQ8",
   "hashes": {
     "AldoApps-Preview-Signing.cer": "def50075e5c4bc9b44b986abc4e23b432da86b6adefb7c0cb4fed03f0f990468",
     "Cockpit-Attribution.txt": "41534c5506e6202ed5f65425673d5e31781d3fa23b963161e8f2fd8d51f4041f",
-    "Preview-Terms.txt": "f9cf375758e6cca7a1e8eb4e1f72da596780e02e17b3f45c54c9d2d6d5191d89",
+    "Preview-Terms.txt": "938e5489a5ca152eea66bd391b008fa6bb9b020e7796aa1297bb164fac103ac0",
     "XPPanels-Companion-0.2.0-beta.1-windows-x64-SELF-SIGNED.exe": "4a3854f4b444f3df3e65ac3b40e0c4e953f193edb87844bc68c3a6fa664a4120",
     "XPPanels-Companion-0.2.0-beta.1-macos-arm64.pkg": "13bca320ea205987c8a7cc3373f8d5e2f8def5d8b054d5b890c5709fca14ec2a",
-    "XPPanelsVR-Quest-2026.10.14-beta.1.apk": "909fcb79d275d1d95f582e6957e784c58f66ca66226a2e30894ee0bda768a357"
+    "XPPanelsVR-Quest-2026.10.14-beta.1.apk": "909fcb79d275d1d95f582e6957e784c58f66ca66226a2e30894ee0bda768a357",
+    "XPPanels-Companion-0.2.1-beta.1-windows-x64-SELF-SIGNED.exe": "4c053c3f651e68214505f661fc3dc440f98b632c16671b93a6c1c12148c33f4f"
   },
   "mac": {
     "file": "XPPanels-Companion-0.2.0-beta.1-macos-arm64.pkg",
@@ -81,9 +105,12 @@
     "adbSha256": "4de5fe2d1e8e8f9e085324398c10e17cdc08172d0a97b82e73078d8a2a7e12dd",
     "pluginSha256": "520e3199df1bfd413daaec7ecda1976e2665f8f118dd09ad405e3751a35cae81",
     "packageTest": "Developer ID signatures, strict nested-code validation, Apple notarization/stapling, Gatekeeper install assessment and packaged helper self-test passed",
-    "scope": "Apple-silicon public beta built from the accepted Mac/Quest Companion installation; clean-Mac and Intel qualification are not claimed"
+    "scope": "Apple-silicon public beta built from the accepted Mac/Quest Companion installation; clean-Mac and Intel qualification are not claimed",
+    "version": "0.2.0-beta.1",
+    "downloadUrl": "https://github.com/aldomm/XPPanelsVR-Quest/releases/download/v0.2.0-beta.1/XPPanels-Companion-0.2.0-beta.1-macos-arm64.pkg"
   },
   "channel": "public beta",
-  "promotedFrom": "v0.2.0-preview.1",
-  "binaryChangesFromPromotedBuild": false
+  "binaryChangesFromPromotedBuild": true,
+  "baselineRelease": "https://github.com/aldomm/XPPanelsVR-Quest/releases/tag/v0.2.0-beta.1",
+  "releaseScope": "Windows command-plugin setup only; Mac and Quest builds unchanged"
 }
