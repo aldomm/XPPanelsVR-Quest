@@ -1,4 +1,4 @@
-# XPPanelsVR for Quest · Windows Companion
+# XPPanelsVR for Quest · Mac and Windows Companion
 
 Public download/setup website: https://aldomm.github.io/XPPanelsVR-Quest/
 
@@ -7,8 +7,9 @@ notices. Application source repositories remain private. No signing private key,
 credentials, aircraft files or simulator SDK belong here.
 
 The Windows preview is self-signed and **not automatically trusted by Windows**.
+The Apple-silicon Mac preview is Developer ID signed, Apple-notarized and stapled.
 The matched Quest APK is the accepted development-signed/debuggable preview.
-Both are testing previews, not a hardened production or Store release.
+All are testing previews, not hardened production or Store releases.
 
 GitHub Pages serves `main` at the repository root. Large downloads are release
 assets, not committed binaries. See the website for setup and current limitations.

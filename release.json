@@ -33,9 +33,10 @@
   "limits": [
     "Testing preview only",
     "Physical joystick required for virtual sidesticks",
-    "Virtual-monitor/controller drivers not bundled",
-    "Separate working XPPanelsBridge command plugin required; clean-PC plugin download pending",
-    "Actual download-on-clean-PC/SmartScreen/headset reinstall not tested; current flight left untouched"
+    "Neutral virtual-controller driver not bundled",
+    "Mac package is Apple silicon only; Windows 11 x64 remains the tested Windows host",
+    "Windows requires the separate working XPPanelsBridge command plugin; Mac includes guided plugin installation",
+    "Quest APK is development-signed/debuggable; broad clean-machine and aircraft-version qualification remain pending"
   ],
   "demo": "https://youtu.be/STcmVYqeqQ8",
   "hashes": {
@@ -43,6 +44,26 @@
     "Cockpit-Attribution.txt": "41534c5506e6202ed5f65425673d5e31781d3fa23b963161e8f2fd8d51f4041f",
     "Preview-Terms.txt": "f9cf375758e6cca7a1e8eb4e1f72da596780e02e17b3f45c54c9d2d6d5191d89",
     "XPPanels-Companion-0.2.0-preview.1-windows-x64-SELF-SIGNED.exe": "4a3854f4b444f3df3e65ac3b40e0c4e953f193edb87844bc68c3a6fa664a4120",
-    "XPPanelsVR-Quest-2026.10.14-preview.apk": "909fcb79d275d1d95f582e6957e784c58f66ca66226a2e30894ee0bda768a357"
+    "XPPanelsVR-Quest-2026.10.14-preview.apk": "909fcb79d275d1d95f582e6957e784c58f66ca66226a2e30894ee0bda768a357",
+    "XPPanels-Companion-0.2.0-preview.1-macos-arm64.pkg": "13bca320ea205987c8a7cc3373f8d5e2f8def5d8b054d5b890c5709fca14ec2a"
+  },
+  "mac": {
+    "file": "XPPanels-Companion-0.2.0-preview.1-macos-arm64.pkg",
+    "bytes": 18703557,
+    "sha256": "13bca320ea205987c8a7cc3373f8d5e2f8def5d8b054d5b890c5709fca14ec2a",
+    "minimumOS": "macOS 15.0",
+    "architecture": "arm64",
+    "appBundle": "Aldoapps.XPPanelsVR.Companion",
+    "appVersion": "0.2.0",
+    "signing": "Developer ID Application and Developer ID Installer; hardened runtime and trusted timestamps",
+    "notarization": "Accepted and stapled",
+    "notarySubmissionId": "32a67773-5272-4ee3-9b56-166a941d1a40",
+    "installerCertificateSha256": "ada6ab2b759ff37f7f5e73424d75642991654b482d65d2b7fe82a0dbfeb0037f",
+    "companionExecutableSha256": "5328b5fa6312d7a3d70a07dec52634b3f52297f35aa2cda08264fc67fbc8a97c",
+    "controlHelperSha256": "a5faffbbab3c9e3b88c02b411040214ef5f779c39a0394bd59fb0412810153e3",
+    "adbSha256": "4de5fe2d1e8e8f9e085324398c10e17cdc08172d0a97b82e73078d8a2a7e12dd",
+    "pluginSha256": "520e3199df1bfd413daaec7ecda1976e2665f8f118dd09ad405e3751a35cae81",
+    "packageTest": "Developer ID signatures, strict nested-code validation, Apple notarization/stapling, Gatekeeper install assessment and packaged helper self-test passed",
+    "scope": "Apple-silicon testing preview built from the accepted Mac/Quest Companion installation; clean-Mac and Intel qualification are not claimed"
   }
 }
