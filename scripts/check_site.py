@@ -44,7 +44,9 @@ assert release['mac']['sha256']=='13bca320ea205987c8a7cc3373f8d5e2f8def5d8b054d5
 assert release['mac']['notarization']=='Accepted and stapled'
 assert release['metaBeta']['invite']=='https://www.meta.com/s/4YJ4Mw9Hd'
 assert release['metaBeta']['debuggable'] is False
-assert release['metaBeta']['sha256']=='176e16bdc32cd56f56a5b9c758602f6170e4af8dd47396070fb0922f6a72a8af'
+assert release['metaBeta']['buildId']=='1486185411233879'
+assert release['metaBeta']['versionCode']==20002
+assert release['metaBeta']['sha256']=='1fbbbd89576659f425920ef9e752e0e20128c0208b8dfdd0beb565f60840a7b9'
 assert release['metaBeta']['automatedTest']=='Complete'
 assert release['quest']['debuggable'] is True
 assert release['quest']['sha256']=='909fcb79d275d1d95f582e6957e784c58f66ca66226a2e30894ee0bda768a357'

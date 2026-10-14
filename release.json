@@ -7,11 +7,11 @@
     "access": "Private; manual approval; testers must be at least 18",
     "appId": "1486007267918360",
     "channelId": "2573676676428443",
-    "buildId": "1486064327912654",
+    "buildId": "1486185411233879",
     "version": "0.2.0-beta.1",
-    "versionCode": 20001,
-    "bytes": 58373830,
-    "sha256": "176e16bdc32cd56f56a5b9c758602f6170e4af8dd47396070fb0922f6a72a8af",
+    "versionCode": 20002,
+    "bytes": 58961875,
+    "sha256": "1fbbbd89576659f425920ef9e752e0e20128c0208b8dfdd0beb565f60840a7b9",
     "certificateSha256": "af19a5781c59d01a8c06126f13846c8611ace9bd3d0e63861500399921eb3099",
     "signing": "AldoApps production certificate; APK Signature Scheme v2",
     "debuggable": false,
@@ -20,7 +20,9 @@
       "quest3s"
     ],
     "automatedTest": "Complete",
-    "cleanQuest3Install": "Passed; installed by com.oculus.ocms; pulled APK exactly matched uploaded SHA-256"
+    "automatedTestNote": "Basic malware test passed; Meta reports that android:allowBackup is not explicitly false",
+    "applicationIcon": "Adaptive, round and legacy icons derived from the XPPanelsVR Apple Vision Pro artwork",
+    "cleanQuest3Install": "Code 20001 passed through com.oculus.ocms; managed update and Library-icon verification for code 20002 remain"
   },
   "windows": {
     "file": "XPPanels-Companion-0.2.1-beta.1-windows-x64-SELF-SIGNED.exe",
@@ -43,8 +45,8 @@
     "video": "Unchanged H.264 Economy / XPV1",
     "compatibleQuest": {
       "version": "0.2.0-beta.1",
-      "versionCode": 20001,
-      "sha256": "176e16bdc32cd56f56a5b9c758602f6170e4af8dd47396070fb0922f6a72a8af"
+      "versionCode": 20002,
+      "sha256": "1fbbbd89576659f425920ef9e752e0e20128c0208b8dfdd0beb565f60840a7b9"
     },
     "pluginSha256": "3f93a331f18ee2d2e8da36a5e3d2a10675a63574176fba252c6e8a5582e13ff0",
     "captureSha256": "ecb5fecc95d4b87ba37d3f47b8ffcc8c088fdc6d10148cbb1eec0f5f84f58c31",
