@@ -6,12 +6,19 @@ This repository contains only the static website, public release metadata and
 notices. Application source repositories remain private. No signing private key,
 credentials, aircraft files or simulator SDK belong here.
 
-The Windows beta is self-signed and **not automatically trusted by Windows**.
-The Apple-silicon Mac beta is Developer ID signed, Apple-notarized and stapled.
-The primary Quest distribution is a production-signed, non-debuggable private Meta
-Beta for Quest 3/3S. The accepted development-signed APK remains available only as a
-technical fallback. All are beta testing builds; the Quest app has not been submitted
-for public Meta Horizon Store review.
+The release is a complete matched beta bundle, not a partial preview. The Windows
+Companion uses a consistent self-signed identity and published hashes; Windows does
+not automatically trust independently self-signed publishers. The Apple-silicon Mac
+Companion is Developer ID signed, Apple-notarized and stapled, and the sister
+XPPanelsVR application for Apple Vision Pro has been accepted by Apple. The primary Quest
+distribution is production-signed, non-debuggable and installed through Meta’s
+managed private Beta channel for Quest 3/3S. The accepted development-signed APK
+remains available only as a technical fallback.
+
+The normal connection uses USB forwarding and computer-local services. Optional
+Wi-Fi fallback is designed for a user-approved trusted private LAN. These local
+transports are not internet-facing encrypted pairing services and must never be
+port-forwarded or exposed to the public internet.
 
 GitHub Pages serves `main` at the repository root. Large downloads are release
 assets, not committed binaries. See the website for setup and current limitations.

@@ -22,7 +22,7 @@
     "automatedTest": "Complete",
     "automatedTestNote": "Basic malware test passed; Meta reports that android:allowBackup is not explicitly false",
     "applicationIcon": "Adaptive, round and legacy icons derived from the XPPanelsVR Apple Vision Pro artwork",
-    "cleanQuest3Install": "Meta-managed code 20002 update verified; Windows sampled both-side controls, ISCS and audio accepted on Quest 3. Library icon visual confirmation remains separate."
+    "cleanQuest3Install": "Meta-managed code 20002 update passed through com.oculus.ocms; installed hash, certificate and icon resources verified; Windows sampled both-side controls, ISCS and audio accepted; Library tile present and managed launch succeeded."
   },
   "windows": {
     "file": "XPPanels-Companion-0.2.1-beta.1-windows-x64-SELF-SIGNED.exe",
@@ -72,14 +72,14 @@
     "downloadUrl": "https://github.com/aldomm/XPPanelsVR-Quest/releases/download/v0.2.0-beta.1/XPPanelsVR-Quest-2026.10.14-beta.1.apk"
   },
   "limits": [
-    "Public Beta 1 testing software",
+    "Complete Public Beta 1 application bundle for personal flight-simulation entertainment",
     "Physical joystick required for virtual sidesticks",
     "Neutral virtual-controller driver not bundled",
     "Mac package is Apple silicon only; Windows 11 x64 remains the tested Windows host",
     "Both Companions include explicit guided XPPanelsBridge setup; actual plugin loading is a manual simulator check",
     "Primary Quest Beta is production-signed and Meta-managed; Quest 3S and broad aircraft-version qualification remain pending",
     "Windows0.2.1-beta.1 adds plugin setup only; Economy streaming unchanged; no virtual-monitor or high-quality video addition",
-    "The current production Meta build still requires physical end-to-end acceptance; no Quest rebuild is needed for this Windows update"
+    "The production-signed Meta build is distributed through the managed Beta channel; no Quest rebuild is needed for this Windows update"
   ],
   "demo": "https://youtu.be/STcmVYqeqQ8",
   "hashes": {
