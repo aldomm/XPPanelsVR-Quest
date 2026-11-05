@@ -31,6 +31,10 @@ release=json.loads((ROOT/'release.json').read_text())
 assert release['version']=='0.2.0-beta.2-trim-pointers'
 assert release['channel']=='public beta'
 assert release['binaryChangesFromPromotedBuild'] is True
+assert release['windows']['version']=='0.3.0-beta.1'
+assert release['windows']['pluginName']=='XPPanelsQuestBridge'
+assert release['windows']['desktopIcon']['sha256']=='20972858356a3220b9bf5c52d506915ceda64cdc3686142c9296f19df4927333'
+assert release['windows']['nativeSectionsUnchanged'] is True
 assert release['windows']['pluginBundled'] is True
 assert release['windows']['highQualityVideoAdded'] is False
 assert release['windows']['requiresQuestRebuild'] is False

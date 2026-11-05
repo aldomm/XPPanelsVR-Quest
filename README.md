@@ -57,3 +57,13 @@ asset IDs. Counts do not represent unique users, successful installations or Met
 distribution. API errors show Unavailable; no partial totals or invented zeros.
 No cookies, local storage, click tracking, credentials or referrer are used.
 Run `node --test tests/download-stats.test.cjs` and `python scripts/check_site.py`.
+
+## Windows icon installer — 5 November 2026
+
+Windows Quest Companion 0.3.0-beta.1 preserves the current separated 0.3.0-preview.1
+payload and adds only installer branding from icon commit 52a1c2f, cherry-picked
+onto the current Quest separation checkpoint a845076. The older handover's suggested
+0.2.2 was not used because the PC had already advanced to 0.3.0 product separation.
+The Mac installer, Quest production APK code 20018 and Meta beta code 20002 are
+unchanged. All previous releases remain available. The Windows package has its own
+Quest launcher, plugin and settings; see the setup guide for older shared installs.
