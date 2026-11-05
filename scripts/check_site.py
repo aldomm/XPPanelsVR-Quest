@@ -28,7 +28,7 @@ for name,page in pages.items():
         assert (ROOT/target).is_file(),(name,href)
         if url.fragment:assert url.fragment in pages[target].ids,(name,href)
 release=json.loads((ROOT/'release.json').read_text())
-assert release['version']=='0.2.1-beta.1'
+assert release['version']=='0.2.0-beta.2-trim-pointers'
 assert release['channel']=='public beta'
 assert release['binaryChangesFromPromotedBuild'] is True
 assert release['windows']['pluginBundled'] is True
@@ -48,8 +48,15 @@ assert release['metaBeta']['buildId']=='1486185411233879'
 assert release['metaBeta']['versionCode']==20002
 assert release['metaBeta']['sha256']=='1fbbbd89576659f425920ef9e752e0e20128c0208b8dfdd0beb565f60840a7b9'
 assert release['metaBeta']['automatedTest']=='Complete'
-assert release['quest']['debuggable'] is True
-assert release['quest']['sha256']=='909fcb79d275d1d95f582e6957e784c58f66ca66226a2e30894ee0bda768a357'
+assert release['quest']['debuggable'] is False
+assert release['quest']['versionCode']==20018
+assert release['quest']['certificateSha256']==release['metaBeta']['certificateSha256']
+assert release['quest']['sha256']=='5e2954dc7597224f478b6bc3a2c167e785588f08f1d8eb4941f73e4179f1321b'
+assert release['quest']['requiresObb'] is False
+assert release['quest']['companionUpdateRequired'] is False
+assert pages['index.html'].linksById['quest-download']==release['quest']['downloadUrl']
+assert pages['index.html'].linksById['meta-beta-invite']==release['metaBeta']['invite']
+assert release['legacyQuest']['debuggable'] is True
 assert 'STcmVYqeqQ8' in (ROOT/'site.js').read_text()
 for p in ROOT.rglob('*'):
     if '.git' in p.parts or '.artifacts' in p.parts:continue

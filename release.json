@@ -1,7 +1,7 @@
 {
-  "version": "0.2.1-beta.1",
-  "date": "2026-10-14",
-  "release": "https://github.com/aldomm/XPPanelsVR-Quest/releases/tag/v0.2.1-beta.1",
+  "version": "0.2.0-beta.2-trim-pointers",
+  "date": "2026-11-05",
+  "release": "https://github.com/aldomm/XPPanelsVR-Quest/releases/tag/v0.2.0-beta.2-code20018",
   "metaBeta": {
     "invite": "https://www.meta.com/s/4YJ4Mw9Hd",
     "access": "Private; manual approval; testers must be at least 18",
@@ -55,31 +55,37 @@
     "liveAcceptance": "2026-10-15: installed via Companion plugin UI with verified previous-plugin backup; X-Plane loaded/enabled command plugin; user accepted both-side sampled controls, ISCS and audio on Meta Quest beta code 20002; all nine streams passed fresh capture/decode checks. Broad clean-PC and sustained-flight qualification not claimed."
   },
   "quest": {
-    "file": "XPPanelsVR-Quest-2026.10.14-beta.1.apk",
-    "bytes": 88769106,
-    "sha256": "909fcb79d275d1d95f582e6957e784c58f66ca66226a2e30894ee0bda768a357",
+    "file": "XPPanelsVR-Quest-0.2.0-beta.2-trim-pointers-code20018-release.apk",
+    "version": "0.2.0-beta.2-trim-pointers",
+    "internalVersion": "0.2.0-beta.2-trim-pointers",
+    "versionCode": 20018,
+    "bytes": 61719487,
+    "sha256": "5e2954dc7597224f478b6bc3a2c167e785588f08f1d8eb4941f73e4179f1321b",
     "package": "com.aldoapps.xppanelsquest",
-    "internalVersion": "0.0.1",
-    "versionCode": 1,
-    "installedLabel": "XPPanels Quest Foundation",
+    "installedLabel": "XPPanelsVR for Quest",
     "architecture": "arm64-v8a",
     "minimumSdk": 32,
-    "targetSdk": 35,
-    "signing": "Android development certificate; APK Signature Scheme v2 verified using official apksigner",
-    "certificateSha256": "54cad1168ce65132e48f246b13a6467da30f9ce83230efce97e5d27ac40774a2",
-    "debuggable": true,
-    "version": "0.2.0-beta.1",
-    "downloadUrl": "https://github.com/aldomm/XPPanelsVR-Quest/releases/download/v0.2.0-beta.1/XPPanelsVR-Quest-2026.10.14-beta.1.apk"
+    "targetSdk": 34,
+    "signing": "AldoApps production certificate; APK Signature Scheme v2 verified",
+    "certificateSha256": "af19a5781c59d01a8c06126f13846c8611ace9bd3d0e63861500399921eb3099",
+    "debuggable": false,
+    "downloadUrl": "https://github.com/aldomm/XPPanelsVR-Quest/releases/download/v0.2.0-beta.2-code20018/XPPanelsVR-Quest-0.2.0-beta.2-trim-pointers-code20018-release.apk",
+    "distribution": "Direct APK; manual installation over USB",
+    "standaloneApk": true,
+    "requiresObb": false,
+    "companionUpdateRequired": false,
+    "upgrade": "In-place update from earlier AldoApps production-signed builds; legacy development-signed installations require one intentional uninstall after preserving settings.",
+    "validation": "Signed build: zero errors; installed on Quest 3. Focused offline trim/pointer checks and Unity captures passed; earlier readability and restored trim scales reviewed in headset. Final pointer headset acceptance and broad hardware testing remain pending."
   },
   "limits": [
-    "Complete Public Beta 1 application bundle for personal flight-simulation entertainment",
+    "Complete beta application bundle for personal flight-simulation entertainment",
     "Physical joystick required for virtual sidesticks",
     "Neutral virtual-controller driver not bundled",
     "Mac package is Apple silicon only; Windows 11 x64 remains the tested Windows host",
     "Both Companions include explicit guided XPPanelsBridge setup; actual plugin loading is a manual simulator check",
-    "Primary Quest Beta is production-signed and Meta-managed; Quest 3S and broad aircraft-version qualification remain pending",
+    "Quest Beta is production-signed and available through the Meta channel or direct APK; Quest 3S and broad aircraft-version qualification remain pending",
     "Windows0.2.1-beta.1 adds plugin setup only; Economy streaming unchanged; no virtual-monitor or high-quality video addition",
-    "The production-signed Meta build is distributed through the managed Beta channel; no Quest rebuild is needed for this Windows update"
+    "Latest direct Quest APK uses the same production signing identity as the Meta build; publishing this APK does not update the separate Meta-managed channel."
   ],
   "demo": "https://youtu.be/STcmVYqeqQ8",
   "hashes": {
@@ -89,7 +95,8 @@
     "XPPanels-Companion-0.2.0-beta.1-windows-x64-SELF-SIGNED.exe": "4a3854f4b444f3df3e65ac3b40e0c4e953f193edb87844bc68c3a6fa664a4120",
     "XPPanels-Companion-0.2.0-beta.1-macos-arm64.pkg": "13bca320ea205987c8a7cc3373f8d5e2f8def5d8b054d5b890c5709fca14ec2a",
     "XPPanelsVR-Quest-2026.10.14-beta.1.apk": "909fcb79d275d1d95f582e6957e784c58f66ca66226a2e30894ee0bda768a357",
-    "XPPanels-Companion-0.2.1-beta.1-windows-x64-SELF-SIGNED.exe": "4c053c3f651e68214505f661fc3dc440f98b632c16671b93a6c1c12148c33f4f"
+    "XPPanels-Companion-0.2.1-beta.1-windows-x64-SELF-SIGNED.exe": "4c053c3f651e68214505f661fc3dc440f98b632c16671b93a6c1c12148c33f4f",
+    "XPPanelsVR-Quest-0.2.0-beta.2-trim-pointers-code20018-release.apk": "5e2954dc7597224f478b6bc3a2c167e785588f08f1d8eb4941f73e4179f1321b"
   },
   "mac": {
     "file": "XPPanels-Companion-0.2.0-beta.1-macos-arm64.pkg",
@@ -115,6 +122,23 @@
   "channel": "public beta",
   "binaryChangesFromPromotedBuild": true,
   "baselineRelease": "https://github.com/aldomm/XPPanelsVR-Quest/releases/tag/v0.2.0-beta.1",
-  "releaseScope": "Windows command-plugin setup only; Mac and Quest builds unchanged",
-  "documentationUpdated": "2026-10-15"
+  "releaseScope": "Quest cockpit readability, restored graduated trim scales and fixed trim reference arrows; Companion packages and communication protocols unchanged",
+  "documentationUpdated": "2026-11-05",
+  "legacyQuest": {
+    "file": "XPPanelsVR-Quest-2026.10.14-beta.1.apk",
+    "bytes": 88769106,
+    "sha256": "909fcb79d275d1d95f582e6957e784c58f66ca66226a2e30894ee0bda768a357",
+    "package": "com.aldoapps.xppanelsquest",
+    "internalVersion": "0.0.1",
+    "versionCode": 1,
+    "installedLabel": "XPPanels Quest Foundation",
+    "architecture": "arm64-v8a",
+    "minimumSdk": 32,
+    "targetSdk": 35,
+    "signing": "Android development certificate; APK Signature Scheme v2 verified using official apksigner",
+    "certificateSha256": "54cad1168ce65132e48f246b13a6467da30f9ce83230efce97e5d27ac40774a2",
+    "debuggable": true,
+    "version": "0.2.0-beta.1",
+    "downloadUrl": "https://github.com/aldomm/XPPanelsVR-Quest/releases/download/v0.2.0-beta.1/XPPanelsVR-Quest-2026.10.14-beta.1.apk"
+  }
 }

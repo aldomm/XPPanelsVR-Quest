@@ -12,8 +12,9 @@ not automatically trust independently self-signed publishers. The Apple-silicon 
 Companion is Developer ID signed, Apple-notarized and stapled, and the sister
 XPPanelsVR application for Apple Vision Pro has been accepted by Apple. The primary Quest
 distribution is production-signed, non-debuggable and installed through Meta’s
-managed private Beta channel for Quest 3/3S. The accepted development-signed APK
-remains available only as a technical fallback.
+managed private Beta channel for Quest 3/3S. The latest direct Quest APK is also production-signed and can update an earlier
+production-signed installation in place. Older development-signed APKs remain
+archived; they are not the current website download.
 
 The normal connection uses USB forwarding and computer-local services. Optional
 Wi-Fi fallback is designed for a user-approved trusted private LAN. These local
@@ -40,3 +41,9 @@ plugin setup, optional Mac virtual monitor, Meta approval, USB authorization, ni
 display sources, optional media, first-session checks, recovery and rollback.
 Windows live acceptance now includes sampled both-side controls, ISCS and audio
 on Meta beta code 20002; this does not establish every PC/aircraft combination.
+
+Quest Beta 2 / build 20018 is published as the latest direct APK on 5 November 2026.
+It improves fixed cockpit printing and restores the original moving pitch-trim
+scales with fixed reference arrows. Companion binaries and protocols are unchanged.
+The Meta channel is separate; this publication does not upload or promote a Meta
+build. Current APK details and checksum are in release.json.
