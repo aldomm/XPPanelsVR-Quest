@@ -47,3 +47,13 @@ It improves fixed cockpit printing and restores the original moving pitch-trim
 scales with fixed reference arrows. Companion binaries and protocols are unchanged.
 The Meta channel is separate; this publication does not upload or promote a Meta
 build. Current APK details and checksum are in release.json.
+
+## Public download statistics
+
+The Downloads section loads aggregate public GitHub asset download counts, split
+into Windows installers, Mac installers and direct Quest APKs, plus their total.
+It includes published beta/preview releases, excludes auxiliary files and deduplicates
+asset IDs. Counts do not represent unique users, successful installations or Meta
+distribution. API errors show Unavailable; no partial totals or invented zeros.
+No cookies, local storage, click tracking, credentials or referrer are used.
+Run `node --test tests/download-stats.test.cjs` and `python scripts/check_site.py`.
