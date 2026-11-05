@@ -67,3 +67,7 @@ onto the current Quest separation checkpoint a845076. The older handover's sugge
 The Mac installer, Quest production APK code 20018 and Meta beta code 20002 are
 unchanged. All previous releases remain available. The Windows package has its own
 Quest launcher, plugin and settings; see the setup guide for older shared installs.
+
+## Quest panel corrections — 5 November 2026
+
+Latest direct production APK: build 20019 / 0.2.0-beta.2-panel-fixes, accepted in-headset by the author. Includes transponder label/window clearance, native knob alignment, GCS/ATC FAIL placement and offline brake needle preview. Windows 0.3.0-beta.1, Mac installer, download-count script and Meta channel remain unchanged. A prominent Apple Vision Pro edition callout links to its App Store app and Companion site.

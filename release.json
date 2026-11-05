@@ -1,7 +1,7 @@
 {
-  "version": "0.2.0-beta.2-trim-pointers",
+  "version": "0.2.0-beta.2-panel-fixes",
   "date": "2026-11-05",
-  "release": "https://github.com/aldomm/XPPanelsVR-Quest/releases/tag/v0.2.0-beta.2-code20018",
+  "release": "https://github.com/aldomm/XPPanelsVR-Quest/releases/tag/v0.2.0-beta.2-code20019",
   "metaBeta": {
     "invite": "https://www.meta.com/s/4YJ4Mw9Hd",
     "access": "Private; manual approval; testers must be at least 18",
@@ -80,12 +80,12 @@
     "payloadFiles": 1997
   },
   "quest": {
-    "file": "XPPanelsVR-Quest-0.2.0-beta.2-trim-pointers-code20018-release.apk",
-    "version": "0.2.0-beta.2-trim-pointers",
-    "internalVersion": "0.2.0-beta.2-trim-pointers",
-    "versionCode": 20018,
-    "bytes": 61719487,
-    "sha256": "5e2954dc7597224f478b6bc3a2c167e785588f08f1d8eb4941f73e4179f1321b",
+    "file": "XPPanelsVR-Quest-0.2.0-beta.2-panel-fixes-code20019-release.apk",
+    "version": "0.2.0-beta.2-panel-fixes",
+    "internalVersion": "0.2.0-beta.2-panel-fixes",
+    "versionCode": 20019,
+    "bytes": 61719239,
+    "sha256": "7798121484771fb4a54150e7cfc63e62e21d3830161b6f752cb48dbe21965287",
     "package": "com.aldoapps.xppanelsquest",
     "installedLabel": "XPPanelsVR for Quest",
     "architecture": "arm64-v8a",
@@ -94,13 +94,13 @@
     "signing": "AldoApps production certificate; APK Signature Scheme v2 verified",
     "certificateSha256": "af19a5781c59d01a8c06126f13846c8611ace9bd3d0e63861500399921eb3099",
     "debuggable": false,
-    "downloadUrl": "https://github.com/aldomm/XPPanelsVR-Quest/releases/download/v0.2.0-beta.2-code20018/XPPanelsVR-Quest-0.2.0-beta.2-trim-pointers-code20018-release.apk",
+    "downloadUrl": "https://github.com/aldomm/XPPanelsVR-Quest/releases/download/v0.2.0-beta.2-code20019/XPPanelsVR-Quest-0.2.0-beta.2-panel-fixes-code20019-release.apk",
     "distribution": "Direct APK; manual installation over USB",
     "standaloneApk": true,
     "requiresObb": false,
     "companionUpdateRequired": false,
     "upgrade": "In-place update from earlier AldoApps production-signed builds; legacy development-signed installations require one intentional uninstall after preserving settings.",
-    "validation": "Signed build: zero errors; installed on Quest 3. Focused offline trim/pointer checks and Unity captures passed; earlier readability and restored trim scales reviewed in headset. Final pointer headset acceptance and broad hardware testing remain pending."
+    "validation": "Signed build: zero errors; 211 readability checks and 1,134 hand assertions passed. Five notch positions and actual digit-display clearance verified. Offline brake preview and stale live hiding verified. Installed on Quest 3; user checked all changes and approved release on 5 November 2026."
   },
   "limits": [
     "Complete beta application bundle for personal flight-simulation entertainment",
@@ -121,7 +121,8 @@
     "XPPanels-Companion-0.2.0-beta.1-macos-arm64.pkg": "13bca320ea205987c8a7cc3373f8d5e2f8def5d8b054d5b890c5709fca14ec2a",
     "XPPanelsVR-Quest-2026.10.14-beta.1.apk": "909fcb79d275d1d95f582e6957e784c58f66ca66226a2e30894ee0bda768a357",
     "XPPanels-Companion-0.2.1-beta.1-windows-x64-SELF-SIGNED.exe": "4c053c3f651e68214505f661fc3dc440f98b632c16671b93a6c1c12148c33f4f",
-    "XPPanelsVR-Quest-0.2.0-beta.2-trim-pointers-code20018-release.apk": "5e2954dc7597224f478b6bc3a2c167e785588f08f1d8eb4941f73e4179f1321b"
+    "XPPanelsVR-Quest-0.2.0-beta.2-trim-pointers-code20018-release.apk": "5e2954dc7597224f478b6bc3a2c167e785588f08f1d8eb4941f73e4179f1321b",
+    "XPPanelsVR-Quest-0.2.0-beta.2-panel-fixes-code20019-release.apk": "7798121484771fb4a54150e7cfc63e62e21d3830161b6f752cb48dbe21965287"
   },
   "mac": {
     "file": "XPPanels-Companion-0.2.0-beta.1-macos-arm64.pkg",
@@ -147,7 +148,7 @@
   "channel": "public beta",
   "binaryChangesFromPromotedBuild": true,
   "baselineRelease": "https://github.com/aldomm/XPPanelsVR-Quest/releases/tag/v0.2.0-beta.1",
-  "releaseScope": "Quest cockpit readability, restored graduated trim scales and fixed trim reference arrows; Companion packages and communication protocols unchanged",
+  "releaseScope": "Quest cockpit readability plus transponder/radar label and notch corrections and offline zero-pressure brake preview; Companion packages and communication protocols unchanged",
   "documentationUpdated": "2026-11-05",
   "legacyQuest": {
     "file": "XPPanelsVR-Quest-2026.10.14-beta.1.apk",
