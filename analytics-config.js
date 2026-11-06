@@ -1,7 +1,7 @@
-// No secrets. Enable only after the free Worker is verified and privacy text is updated.
+// No secrets. Free Worker verified; current privacy notice describes anonymous link requests.
 window.XPPanelsAnalyticsConfig = {
-  "enabled": false,
-  "endpoint": "",
+  "enabled": true,
+  "endpoint": "https://xppanels-download-analytics.aldoapps.workers.dev/event",
   "assets": {
     "https://github.com/aldomm/XPPanelsVR-Quest/releases/download/v0.3.0-beta.1/AldoApps-Preview-Signing.cer": "aldomm/XPPanelsVR-Quest:712207891",
     "https://github.com/aldomm/XPPanelsVR-Quest/releases/download/v0.3.0-beta.1/release.json": "aldomm/XPPanelsVR-Quest:712207883",
