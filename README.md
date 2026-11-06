@@ -48,9 +48,25 @@ scales with fixed reference arrows. Companion binaries and protocols are unchang
 The Meta channel is separate; this publication does not upload or promote a Meta
 build. Current APK details and checksum are in release.json.
 
-## Accounts and aggregate download reports
+## Anonymous download analytics
 
-The landing page is public to read. The prepared passwordless email gate is disabled until its providers are configured and the files are moved to private storage; current public GitHub download links still work without sign-in. After cutover, download aggregates (daily date, product/file, approximate country) will be visible only to the site owner in Cloudflare D1; the public page exposes no statistics endpoint. The shared backend draft remains local and is not deployed. Provider and privacy details will be published before activation.
+All downloads stay public on GitHub. No email, registration, sign-in or payment is required.
+The new anonymous link-request counter is prepared but disabled until its Cloudflare
+Workers FREE endpoint and D1 FREE database are configured. An analytics failure or
+quota limit never controls or delays the direct download link.
+
+The planned owner-only report separates website download-link requests (by UTC day,
+immutable release asset ID, file/version, platform and approximate country) from
+GitHub per-asset download_count totals. Neither means completed downloads, installs,
+unique people or bot-free traffic. Direct GitHub links bypass website tracking;
+VPNs/proxies can change the apparent country. No email, account ID, raw IP,
+fingerprint or tracking cookie is stored by the counter. Providers may process
+connection information under their own terms.
+
+The previous auth-service draft is superseded and must not be deployed. The current
+setup, free limits and private report commands are documented in the Companion
+repository's analytics-service/README.md. No R2, Supabase, SMTP, paid plan or domain
+purchase is involved. Optional support remains aldoapps@gmail.com.
 
 ## Windows icon installer — 5 November 2026
 
