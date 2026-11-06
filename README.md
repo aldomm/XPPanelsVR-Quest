@@ -48,15 +48,9 @@ scales with fixed reference arrows. Companion binaries and protocols are unchang
 The Meta channel is separate; this publication does not upload or promote a Meta
 build. Current APK details and checksum are in release.json.
 
-## Public download statistics
+## Accounts and aggregate download reports
 
-The Downloads section loads aggregate public GitHub asset download counts, split
-into Windows installers, Mac installers and direct Quest APKs, plus their total.
-It includes published beta/preview releases, excludes auxiliary files and deduplicates
-asset IDs. Counts do not represent unique users, successful installations or Meta
-distribution. API errors show Unavailable; no partial totals or invented zeros.
-No cookies, local storage, click tracking, credentials or referrer are used.
-Run `node --test tests/download-stats.test.cjs` and `python scripts/check_site.py`.
+The landing page is public to read. The prepared passwordless email gate is disabled until its providers are configured and the files are moved to private storage; current public GitHub download links still work without sign-in. After cutover, download aggregates (daily date, product/file, approximate country) will be visible only to the site owner in Cloudflare D1; the public page exposes no statistics endpoint. The shared backend draft remains local and is not deployed. Provider and privacy details will be published before activation.
 
 ## Windows icon installer — 5 November 2026
 
@@ -70,4 +64,4 @@ Quest launcher, plugin and settings; see the setup guide for older shared instal
 
 ## Quest panel corrections — 5 November 2026
 
-Latest direct production APK: build 20019 / 0.2.0-beta.2-panel-fixes, accepted in-headset by the author. Includes transponder label/window clearance, native knob alignment, GCS/ATC FAIL placement and offline brake needle preview. Windows 0.3.0-beta.1, Mac installer, download-count script and Meta channel remain unchanged. A prominent Apple Vision Pro edition callout links to its App Store app and Companion site.
+Latest direct production APK: build 20019 / 0.2.0-beta.2-panel-fixes, accepted in-headset by the author. Includes transponder label/window clearance, native knob alignment, GCS/ATC FAIL placement and offline brake needle preview. Windows 0.3.0-beta.1, Mac installer, download-count script and Meta channel remain unchanged.
