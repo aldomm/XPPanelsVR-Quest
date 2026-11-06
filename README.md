@@ -48,20 +48,31 @@ scales with fixed reference arrows. Companion binaries and protocols are unchang
 The Meta channel is separate; this publication does not upload or promote a Meta
 build. Current APK details and checksum are in release.json.
 
-## Anonymous download analytics
+## Anonymous page-view and download analytics
 
 All downloads stay public on GitHub. No email, registration, sign-in or payment is required.
-The new anonymous link-request counter is prepared but disabled until its Cloudflare
-Workers FREE endpoint and D1 FREE database are configured. An analytics failure or
+The anonymous counters use the existing Cloudflare Workers Free endpoint and D1
+Free database. An analytics failure or
 quota limit never controls or delays the direct download link.
 
-The planned owner-only report separates website download-link requests (by UTC day,
+The private owner report separates website download-link requests (by UTC day/hour,
 immutable release asset ID, file/version, platform and approximate country) from
 GitHub per-asset download_count totals. Neither means completed downloads, installs,
 unique people or bot-free traffic. Direct GitHub links bypass website tracking;
 VPNs/proxies can change the apparent country. No email, account ID, raw IP,
 fingerprint or tracking cookie is stored by the counter. Providers may process
 connection information under their own terms.
+
+`page-views.js` counts one load per landing-page document, including repeat loads;
+it does not identify unique visitors. Only the repository root and `index.html`
+qualify. Daily/hourly aggregates contain product, approximate country, time bucket
+and count, with no referrer, query string, raw IP or persistent visitor identifier.
+Page-view tracking begins with the first accepted event and is never backfilled.
+
+The existing hosted daily report uses a fixed 09:00 Asia/Hong_Kong cutoff and shows
+24-hour, 7-day, 30-day and all-time page views separately from downloads. Partial
+history is labeled. Only package-download activity in the latest fully covered
+24-hour window can qualify an email to the owner; page views alone never do.
 
 The previous auth-service draft is superseded and must not be deployed. The current
 setup, free limits and private report commands are documented in the Companion
